@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>303 Tech | Computer Shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#30364F;
+  --accent:#4F5D8C;
+  --light:#f4f6fa;
+  --white:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--white);
+  color:var(--primary);
+  line-height:1.6;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  background:var(--primary);
+  color:white;
+  padding:20px 0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  font-size:22px;
+  font-weight:700;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-weight:500;
+}
+
+.hero{
+  background:linear-gradient(rgba(48,54,79,0.85),rgba(48,54,79,0.85)),
+  url('https://images.unsplash.com/photo-1587202372775-989b7b3a9b3f');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:120px 0;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:30px;
+  opacity:0.9;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:white;
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:600;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:var(--accent);
+  color:white;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.section-light{
+  background:var(--light);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  margin-bottom:15px;
+}
+
+.cta{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.cta h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+footer{
+  background:#1f2438;
+  color:#ccc;
+  padding:40px 0;
+  text-align:center;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  .hero h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <h1>303 Tech</h1>
+      <div>
+        <a href="#">สินค้า</a>
+        <a href="#">บริการ</a>
+        <a href="#">ติดต่อ</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>คอมแรง คุณภาพจัดเต็ม</h2>
+    <p>จำหน่ายคอมพิวเตอร์ ประกอบเครื่อง ซ่อม อัปเกรด ครบจบในที่เดียว</p>
+    <a href="#" class="btn">ช้อปเลย</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h3>🚀 คอมประกอบสเปคแรง</h3>
+        <p>เลือกสเปคตามงบ ไม่ยัดของเกินจำเป็น เน้นประสิทธิภาพคุ้มค่า</p>
+      </div>
+      <div class="card">
+        <h3>🛠 บริการซ่อมด่วน</h3>
+        <p>ตรวจเช็คฟรี รู้ปัญหาก่อนตัดสินใจ ไม่มีค่าใช้จ่ายแอบแฝง</p>
+      </div>
+      <div class="card">
+        <h3>🔒 อะไหล่แท้ มาตรฐานสูง</h3>
+        <p>ใช้อุปกรณ์จากแบรนด์ชั้นนำ มั่นใจได้ในความทนทาน</p>
+      </div>
+      <div class="card">
+        <h3>💼 โซลูชันสำหรับธุรกิจ</h3>
+        <p>จัดเซ็ตคอมสำนักงาน ระบบเครือข่าย และดูแลระยะยาว</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container" style="text-align:center;">
+    <h2>ทำไมต้องเลือก 303 Tech?</h2>
+    <p style="margin-top:20px; max-width:700px; margin-left:auto; margin-right:auto;">
+      เราให้คำปรึกษาอย่างจริงใจ เน้นประสิทธิภาพที่ตอบโจทย์การใช้งานจริง
+      ไม่ขายเกินความจำเป็น พร้อมรับประกันและดูแลหลังการขาย
+    </p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>พร้อมอัปเกรดเครื่องของคุณแล้วหรือยัง?</h2>
+  <p>รับคำปรึกษาฟรีวันนี้</p>
+  <br>
+  <a href="#" class="btn">ติดต่อเรา</a>
+</section>
+
+<footer>
+  <div class="container">
+    <p>303 Tech | ร้านคอมพิวเตอร์ครบวงจร</p>
+    <p>โทร: 08X-XXX-XXXX | อีเมล: contact@303tech.com</p>
+    <p>© 2026 303 Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
